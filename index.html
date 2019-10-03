@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <base target="_blank">
+  <title>Yakamoz-首页</title>
+  <link rel="shortcut icon" href="./webICO.ico" />
+  <style>
+    /* html{overflow:hidden;} */
+    *{
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      color: rgb(0,120,215);
+      font-family:楷体;
+    }
+    a{
+      text-decoration: none;
+      border: none;
+      outline: none;
+    }
+    a.focus{
+      outline: none;
+    }
+    canvas{
+      display: block;/* canvas adaptive  */
+      position: fixed;
+      z-index: -1;
+    }
+    #bg4element{
+      width:60%;
+      height: auto;      
+      position: absolute;
+      top:0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto auto;
+    }
+    .div4top{
+      background-color: rgb(50,50,50);
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      font-size: 46px;
+      margin-top: 15px;
+    }
+    .div4show{
+      background-color:  rgb(40,40,40);
+      border: 2px solid cadetblue;
+      width: 90%;
+      position: relative;
+      left: 0;
+      right: 0;
+      margin: 25px auto;
+      font-size: 38px;
+    }
+    .div4explain{
+      background-color: rgb(10, 10, 10);
+      border-radius: 8px;
+      height: auto;
+      font-size: 24px;
+      color: rgb(180,36,36);
+      text-align: left;
+      text-indent: 2em;
+    }
+    footer{
+      text-align: center;
+      color: antiquewhite;
+    }
+  </style>
+</head>
+<body style="background-color: rgb(30, 30, 30);">
+  <div id="bg4element">
+      <div class="div4top">
+        Yakamoz 
+        <div class="div4explain">
+          这仅仅是一个个人网站，不作为任何的商业用途实现。如果你想提问更多的问题并得到答案，你可以去移步
+          <a href="./QandA.html">问答区</a>
+          去获取你想提问的问题答案。<br>
+          注：Yakamoz，2007年世界最美单词，土耳其单词，可读为“亚卡摩兹”。中文意思是“月亮在水中的倒影”。
+        </div>
+      </div>
+
+      <!-- 
+      复制下面的代码即可创建一个展示框
+      <div class="div4show">
+          <a href=""></a>
+          <div class="div4explain">
+            
+          </div>
+      </div>
+       -->
+
+      <div class="div4show">
+        <a href="./starrySky.html">星空</a>
+        <div class="div4explain">
+          动态互动。当鼠标点击的时候会在点击位置生成流星。作品主要使用的是随机数达到自然的效果。
+          CPU报销程度较弱。作品的创意仅仅是因为想尝试一下现实派画风，作品本身应该是一副静态图的，但是这样就缺少了直接访问的趣味性，于是我就加入了互动。
+        </div>
+      </div>
+
+      <div class="div4show">
+          <a href="./2dDraw.html">平面欺骗</a>
+          <div class="div4explain">
+            动态无互动。这是早期的作品。仅仅是实现了一个周期运动，并实现了所谓的平面欺骗（2d绘制但是视觉呈现为3d）。
+            CPU报销程度基本为0。 作品的创意是网上看多了这种绘图大师，而自己也想尝试一下。不过有趣的是在此之后我也同样有这种想法去
+            实现一些别的平面欺骗，但是因为需要的数学运算并不是一件容易的事件，便成为了失败的作品...
+          </div>
+      </div>
+
+      <div class="div4show">
+          <a href="./break.html">打碎玻璃</a>
+          <div class="div4explain">
+            动态互动。点击后出现碎裂。这个并不是我的创意，而是无意间了解到的。便通过阅读源码将其移植实现了一下。本应该是使用泰森多边形[又叫冯洛诺伊图（Voronoi diagram）]
+            进行优化使其更加的真实和具有现实性。但是同样是因为需要相应的知识，在求助周围人无果后变放弃了这样的优化。CPU报销程度：你点的越快，你CPU报销的越快！
+            珍爱CPU，请适度点击！
+          </div>
+      </div>
+
+      <div class="div4show">
+          <a href="./sudu.html">数独解析器</a>
+          <div class="div4explain">
+            游戏。左键点击+1，右键点击-1，点击start进行一次解析。这是唯一一个目前涉及到算法和逻辑的作品。期间也领悟了js的数组的一大麻烦。
+            应该不能说是创意了，这是当时发现家中的还有中学买的一本数独的书，然后因为和九连环一样，都有所谓的套路，于是就使用了"机械性高的任务就交给
+            计算机去做"。CPU报销程度：中。如果你不是特别想为难你的CPU的话，请你正确的填写你要解析的数独。期间没有加入违规操作处理，一切答案以你的认知为准。
+          </div>
+      </div>
+
+      <div class="div4show">
+          <a href="./water.html">柔和的水潭</a>
+          <div class="div4explain">
+            动态无互动。这是丹叔的创意（丹叔仅实现了静态），但是我在其之上完成了渐变色和随时间柔和运动，并添加了阴影。这样看起来比较自然柔和。
+            CPU报销程度弱。
+          </div>
+      </div>
+
+      <div class="div4show">
+        <a href="">近期更新</a>
+        <div class="div4explain">
+          将会更新静态和生成背景的作品。时间：随缘。
+        </div>
+    </div>
+
+      <hr style="width: 60%; margin: auto; color: bisque;">
+      <footer>特别鸣谢：<a href="http://www.fastdo.cc/">FastDo</a>的大力帮助。</footer>
+  </div>
+</body>
+</html>
