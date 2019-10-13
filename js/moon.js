@@ -21,7 +21,7 @@ function draw(){
   ctx.shadowBlur = 35;
   fill(254,194,81);//没有填充色的话是不会存在阴影的
   noStroke();
-  ellipse(width/2, height/2, height-20);
+  ellipse(width/2, height/2, height-50);
   pop();
 
   //进行月亮的计算
@@ -29,7 +29,7 @@ function draw(){
   colorMode(HSB, 1, 1, 1, 1);  
   noFill();
   noStroke();
-  ctx.arc(width/2, height/2, height/2-20,0,PI*2,false);
+  ctx.arc(width/2, height/2, height/2-50,0,PI*2,false);
   ctx.clip();
   for(let i = 0; i<width; ++i){
     for(let j = 0; j<height; ++j ){
